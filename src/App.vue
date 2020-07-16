@@ -21,7 +21,7 @@ export default class App extends Vue {
   socials = [
     { link: 'https://github.com/nvarg', image: 'images/GitHub-64.png' },
     { link: 'https://linkedin.com/in/nvarg', image: 'images/LI-64.png' },
-    { link: '#', image: 'images/resume-download.png' },
+    { link: 'resume.pdf', image: 'images/resume-download.png' },
   ]
 }
 </script>

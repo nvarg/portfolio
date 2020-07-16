@@ -6,7 +6,8 @@
         "image": "https://i.imgur.com/KNLTLkx.png",
         "urls": {
             "git": "https://github.com/nvarg/smt4-fusion",
-            "live": "https://smt4-fusion.wl.r.appspot.com"
+            "live": "https://smt4-fusion.wl.r.appspot.com",
+            "notebook": "https://nbviewer.jupyter.org/urls/bit.ly/2V5s74e#End-Result"
         }
     },
     {
@@ -16,7 +17,7 @@
         "image": "https://i.imgur.com/2xlaaRN.png",
         "urls": {
             "git": "https://github.com/nvarg/RedditDataMining",
-            "live": "https://nbviewer.jupyter.org/github/nvarg/RedditDataMining/blob/master/Emotion-Mining/3%20Analysis.ipynb"
+            "notebook": "https://nbviewer.jupyter.org/github/nvarg/RedditDataMining/blob/master/Emotion-Mining/3%20Analysis.ipynb"
         }
     },
     {
@@ -25,8 +26,8 @@
         "tags": ["Typescript", "Vue.js", "SCSS", "GSAP"],
         "image": "https://i.imgur.com/v5XS7ZS.png",
         "urls": {
-            "git": "#",
-            "live": "#"
+            "git": "https://github.com/nvarg/portfolio",
+            "live": "nvarg.github.io"
         }
     }
 ]
