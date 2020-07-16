@@ -56,7 +56,16 @@ body {
   &__contact {
     max-width: 64em;
     margin: 0 auto;
-    font-size: calc(0.2em + 0.7vw);
+    font-size: minmax(0.9rem, calc(0.2em + 0.7vw));
+  }
+
+  @media (max-width: 68.5rem) {
+    &__projects,
+    &__contact,
+    &__about {
+      margin-left: 3.5rem;
+    }
   }
 }
+
 </style>

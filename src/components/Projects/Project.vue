@@ -78,8 +78,9 @@ export default class Project extends Vue implements ProjectInfo {
   display: grid;
   margin: auto;
   background-color: lighten($clr-bg, 8%);
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: minmax(auto, 3fr) minmax(auto, 1fr);
   padding: 0.65em;
+  max-width: calc(100% - 3.5rem);
 
   & + & {
     margin-top: 7.25em;
@@ -109,7 +110,7 @@ export default class Project extends Vue implements ProjectInfo {
   }
 
   &__tags {
-    grid-area: 4/1/4/2;
+    grid-area: 4/1/4/3;
     display: flex;
     margin-left: 2.5em;
 
@@ -119,7 +120,7 @@ export default class Project extends Vue implements ProjectInfo {
   }
 
   &__links {
-    grid-area: 4/2/4/3;
+    grid-area: 5/2/6/3;
     margin: 1.25em 0;
     display: flex;
     justify-content: flex-end;
@@ -130,6 +131,7 @@ export default class Project extends Vue implements ProjectInfo {
       text-decoration: none;
       color: $clr-text;
       font-weight: 700;
+      text-transform: capitalize;
     }
 
     a + a {
