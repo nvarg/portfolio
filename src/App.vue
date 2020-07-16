@@ -1,29 +1,62 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <main id="app" class="app">
+    <Social size="48" :socials="socials" class="app__socials" />
+    <About id="about" class="app__about" />
+    <Projects id="projects" class="app__projects" />
+  </main>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Social from '@/components/Social.vue';
+import About from '@/components/About/About.vue';
+import Projects from '@/components/Projects/Projects.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Social, About, Projects,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  socials = [
+    { link: 'https://github.com/nvarg', image: 'images/GitHub-64.png' },
+    { link: 'https://linkedin.com/in/nvarg', image: 'images/LI-64.png' },
+    { link: '#', image: 'images/resume-download.png' },
+  ]
+}
 </script>
 
 <style lang="scss">
-#app {
+html,
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: $clr-bg;
+  color: $clr-text;
+  line-height: 1.3;
+  margin: 0 0.25em 2.65em 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+
+  &__navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  &__projects,
+  &__contact {
+    max-width: 64em;
+    margin: 0 auto;
+    font-size: calc(0.2em + 0.7vw);
+  }
 }
 </style>

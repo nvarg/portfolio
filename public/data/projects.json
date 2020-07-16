@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Shin Megami Tensei IV Compendium",
+        "description": ["I extracted sprite textures from a Nintendo 3DS game cartridge to provide game information in a visually appealing way. A backend provides game data and crops images to the contour with the largest area.", "This game has an ability inheritance and fusion system with over 2000 fusions and I intend to expand on that in the future."],
+        "tags": ["Typescript", "Python", "Vue.js", "Flask", "SQLAlchemy", "OpenCV", "Google Cloud"],
+        "image": "https://i.imgur.com/KNLTLkx.png",
+        "urls": {
+            "git": "https://github.com/nvarg/smt4-fusion",
+            "live": "https://smt4-fusion.wl.r.appspot.com"
+        }
+    },
+    {
+        "title": "Reddit Data Mining",
+        "description": ["A script ran a daily API data collection and cleaning of 49 subreddits. The data was used to create visualizations in matplotlib from a sentiment analysis of the reddit comments.‎"],
+        "tags": ["Python", "NLTK", "matplotlib", "Shell Scripting", "Reddit API"],
+        "image": "https://i.imgur.com/2xlaaRN.png",
+        "urls": {
+            "git": "https://github.com/nvarg/RedditDataMining",
+            "live": "https://nbviewer.jupyter.org/github/nvarg/RedditDataMining/blob/master/Emotion-Mining/3%20Analysis.ipynb"
+        }
+    },
+    {
+        "title": "Portfolio Site",
+        "description": ["This portfolio site. Uses GreenSock for the fancy SVG animation."],
+        "tags": ["Typescript", "Vue.js", "SCSS", "GSAP"],
+        "image": "https://i.imgur.com/v5XS7ZS.png",
+        "urls": {
+            "git": "#",
+            "live": "#"
+        }
+    }
+]
